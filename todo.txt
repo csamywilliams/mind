@@ -1,0 +1,53 @@
+- Vertical Navigation Bar 
+    - Links
+    - Show / Hide based on device
+    - Mobile - hamburger menu
+    - Desktop - expanded
+- Horizontal banner across top
+    - Logout button
+- Login
+- Register
+- Logout
+- Session expiry
+- Dashboard
+    - Widgets
+        - Journal
+        - Mindfullness
+        - Nutrition
+        - Exercise
+- Journal
+    - Add
+        - Datepicker
+        - Notes
+        - Save
+    - Edit
+    - Delete
+    - History
+    - List
+    - Archive
+- Mindfullness
+    - Widgets
+        - Affirmations
+        - Goal settings
+            - Goal
+                - Milestone
+                - Mini - Milestone
+            - Progress tracker
+        - Personal statement
+        - Wheel of Life
+- Nutrition
+    - Recipes
+        - Add
+        - Save (like Pinterest)
+        - Edit
+        - Delete
+    - Guides
+    - Food planner
+    - Food tracker
+- Exercise
+    - Videos
+    - Exercise planner
+    - Exercise tracker
+
+    
+    
