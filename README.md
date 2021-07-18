@@ -1,3 +1,16 @@
+# Mind
+
+This project is created to help track and monitor your mental health and emotions.
+Journalling is a powerful tool to understand who you are.
+Exercising and nutrition is important for health lifestyle.
+
+This app is built using Create React App using Typescript and Styled-components.
+
+What the project aims to achieve: 
+ 
+- Daily diary entries
+- Mindfulness area to track goals, tasks and daily affirmations
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
