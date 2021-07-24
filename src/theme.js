@@ -29,21 +29,11 @@ const COLORS = {
 };
 
 export const theme = {
-	banner: {
+	aside: {
 		bg: COLORS.WHITE,
 	},
-	content: {
-		bg: COLORS.SECONDARY_COLOR,
-	},
-	header: {
-		borderBottom: COLORS.PRIMARY_COLOR,
-	},
-	tile: {
-		border: COLORS.PRIMARY_COLOR,
-		hover: COLORS.TERTIARY_COLOR,
-	},
-	sideNavbar: {
-		background: COLORS.GREY,
+	banner: {
+		bg: COLORS.WHITE,
 	},
 	button: {
 		bg: COLORS.PRIMARY_COLOR,
@@ -54,6 +44,22 @@ export const theme = {
 			border: COLORS.PRIMARY_COLOR_SOFT,
 			color: COLORS.PRIMARY_COLOR_INVERT,
 		},
+	},
+	content: {
+		bg: COLORS.SECONDARY_COLOR,
+	},
+	header: {
+		borderBottom: COLORS.PRIMARY_COLOR,
+	},
+	profile: {
+		name: COLORS.PRIMARY_COLOR,
+	},
+	tile: {
+		border: COLORS.PRIMARY_COLOR,
+		hover: COLORS.TERTIARY_COLOR,
+	},
+	sideNavbar: {
+		background: COLORS.GREY,
 	},
 	tiles: {
 		tile1: {
