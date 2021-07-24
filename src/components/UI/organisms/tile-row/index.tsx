@@ -7,10 +7,9 @@ type TileRowProps = {
   tiles: Array<TileProps>
 }
 
-const TileRow = ({ tiles }: TileRowProps) => <div>
+const TileRow = ({ tiles }: TileRowProps) => 
   <TileRowStyled>
     {tiles.map(({name, icon, page, styledAs}) => <Tile key={name} name={name} icon={icon} page={page} styledAs={styledAs} />)}
   </TileRowStyled>
-</div>
 
 export default TileRow;

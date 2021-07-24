@@ -1,5 +1,6 @@
 import { SiLivejournal } from 'react-icons/si';
 import { GiStairsGoal } from 'react-icons/gi';
+import { FaTasks } from 'react-icons/fa';
 
 const tiles = [
 	{
@@ -13,6 +14,12 @@ const tiles = [
 		page: 'goals',
 		icon: GiStairsGoal,
 		styledAs: 'goals',
+	},
+	{
+		name: 'Tasks',
+		page: 'tasks',
+		icon: FaTasks,
+		styledAs: 'tasks',
 	},
 ];
 

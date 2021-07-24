@@ -13,6 +13,7 @@ const BASE_PALETTE = {
 	PALE_ORANGE: '#FFEEEB',
 	DARK_GREY: '#474B5A',
 	WHITE: '#FFF',
+	OFF_WHITE: 'rgb(0 0 0 / 0.2)',
 };
 
 const COLORS = {
@@ -26,6 +27,7 @@ const COLORS = {
 	TILE3: BASE_PALETTE.LIGHT_LILAC,
 	WHITE: BASE_PALETTE.WHITE,
 	PRIMARY_FONT: BASE_PALETTE.DARK_GREY,
+	BOX_SHADOW: BASE_PALETTE.OFF_WHITE,
 };
 
 export const theme = {
@@ -35,6 +37,7 @@ export const theme = {
 	banner: {
 		bg: COLORS.WHITE,
 	},
+	boxShadow: COLORS.BOX_SHADOW,
 	button: {
 		bg: COLORS.PRIMARY_COLOR,
 		color: COLORS.WHITE,
@@ -62,6 +65,8 @@ export const theme = {
 		background: COLORS.GREY,
 	},
 	tiles: {
+		border: COLORS.PRIMARY_COLOR,
+		bg: COLORS.WHITE,
 		tile1: {
 			background: COLORS.TILE1,
 			svgColor: COLORS.WHITE,

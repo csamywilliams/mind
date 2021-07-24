@@ -4,6 +4,8 @@ export const DashboardStyled = styled.div``;
 
 export const MainStyled = styled.main`
 	display: flex;
+	flex-direction: column;
+	width: 100vw;
 	background: ${({ theme }) => theme.content.bg};
 	border-top-left-radius: 1%;
 `;

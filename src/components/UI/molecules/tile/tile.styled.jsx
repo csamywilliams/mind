@@ -1,39 +1,44 @@
 import styled from 'styled-components';
-import { devices } from '../../../../js/devices';
 
 export const TileStyled = styled.div`
+	flex: 1;
+	padding: 2%;
+
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	justify-content: space-evenly;
+	width: 100%;
+	padding: 1rem;
 	text-align: center;
-	align-content: center;
+	border-radius: 0.5rem;
+	margin: 1rem;
+	background-color: ${({ theme }) => theme.tiles.bg};
+	box-shadow: 0 3px 10px ${({ theme }) => theme.boxShadow};
+`;
 
-	.tile {
-		width: 100%;
-		border-radius: 0.5rem;
-		padding: 1rem;
-		margin: 1rem;
-		width: 40vw;
+export const TileContentStyled = styled.div`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+`;
+
+export const IconStyled = styled.div`
+	clip-path: circle(40% at 50% 50%);
+
+	.icon {
+		padding: 2rem;
 
 		&--journal {
 			background-color: ${({ theme }) => theme.tiles.tile1.background};
-
-			&:hover {
-				background: ${({ theme }) => theme.tiles.tile1.hover};
-			}
 		}
 
 		&--goals {
 			background-color: ${({ theme }) => theme.tiles.tile2.background};
-
-			&:hover {
-				background: ${({ theme }) => theme.tiles.tile2.hover};
-			}
 		}
 
-		@media ${devices.laptop} {
-			width: 20rem;
-			flex-direction: row;
+		&--tasks {
+			background-color: ${({ theme }) => theme.tiles.tile3.background};
 		}
 	}
 `;

@@ -4,16 +4,17 @@ import { IconContext } from "react-icons";
 
 type IconProps = {
     styledAs: string,
-	icon: React.ComponentType;
+    icon: React.ComponentType;
+    iconSize: string
 }
 
-const Icon = ({ icon, styledAs }: IconProps) => {
+const Icon = ({ icon, styledAs, iconSize }: IconProps) => {
 
   const IconComponent = icon;
 
     return (
         <IconStyled>
-            <IconContext.Provider value={{ size: "2rem"}}>
+            <IconContext.Provider value={{ size: iconSize}}>
                 <IconComponent />
             </IconContext.Provider>
         </IconStyled>
