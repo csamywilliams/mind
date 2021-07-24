@@ -1,8 +1,9 @@
 import { Fragment } from "react"
 import TileRow from "../../UI/organisms/tile-row"
+import Banner from "../../UI/organisms/banner"
 import TileProps from "../../interfaces/tile-props"
 
-import { DashboardStyled } from "./dashboard-layout.styled"
+import { DashboardStyled, MainStyled } from "./dashboard-layout.styled"
 
 
 type DashboardProps = {
@@ -10,11 +11,14 @@ type DashboardProps = {
 }
 
 const DashboardLayout = ({ tiles }: DashboardProps) => 
-  <Fragment>
-      <DashboardStyled>
-        <TileRow tiles={tiles} />
-      </DashboardStyled>
-  </Fragment>
+	<Fragment>
+		<DashboardStyled>
+		<Banner />
+			<MainStyled>
+				<TileRow tiles={tiles} />
+			</MainStyled>
+		</DashboardStyled>
+	</Fragment>
 
 
 export default DashboardLayout;
