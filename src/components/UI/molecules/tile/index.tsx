@@ -1,6 +1,8 @@
+import { IoMdAddCircleOutline } from "react-icons/io";
+
 import TileProps from "../../../interfaces/tile-props"
 
-import Button from "../../atoms/button"
+import IconButton from "../../atoms/icon-button"
 import Icon from "../../atoms/icon"
 
 import { TileStyled, TileContentStyled, IconStyled } from "./tile.styled"
@@ -16,7 +18,7 @@ const Tile = ({ name, icon, page, styledAs }: TileProps) => {
         </IconStyled>
         <TileContentStyled>
            <p>{name}</p>
-          <Button title="Add" />
+          <IconButton icon={IoMdAddCircleOutline} iconSize="2rem" styledAs="normal" />
         </TileContentStyled>
     </TileStyled>
   )
