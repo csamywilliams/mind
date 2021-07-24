@@ -1,11 +1,17 @@
 import React from 'react';
+import { ThemeProvider } from "styled-components";
 import './App.css';
-import { Header } from "./components/header"
+
+import Dashboard from "./components/pages/dashboard"
+
+import { theme } from "./theme";
 
 function App() {
   return (
     <div>
-        <Header title="Dashboard" />
+      <ThemeProvider theme={theme}>
+        <Dashboard />
+      </ThemeProvider>
     </div>
   );
 }
